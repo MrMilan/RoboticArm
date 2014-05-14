@@ -7,16 +7,16 @@ namespace RoboticArm
 {
     interface IMotor
     {
-        int AktualPosition { get; set; }
+        int AktualPosition { get; }
 
-        void SetMaximum();
-        void SetMinimum();
-        void SetAcceleration();
-        void SetDeceleration();
-        void SetHomePosition();
-        void MoveToPosition();
-        void MoveByVelocity();
-        void MoveByMoment();
+        void SetMaximum(int numberOfMotor, int position);
+        void SetMinimum(int numberOfMotor, int position);
+        void SetAcceleration(int numberOfMotor, int valueAcceleration);
+        void SetDeceleration(int numberOfMotor, int valueAcceleration);
+        void SetHomePosition(int numberOfMotor, int position);
+        void MoveToPosition(int numberOfMotor, int position);
+        void MoveByVelocity(int numberOfMotor, int valueVelocity,int time);
+        void MoveByMoment(int numberOfMotor, int valueMoment, int time);
         void MoveToHomePosition();
         void ReadInputs();
     }

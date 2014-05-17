@@ -15,5 +15,12 @@ namespace RoboticArm
         {
             InitializeComponent();
         }
+
+        public void pokus()
+        {
+
+            IMotor moturek = new Motor();
+        
+        }
     }
 }

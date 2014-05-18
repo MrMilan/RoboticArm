@@ -106,6 +106,17 @@ namespace RoboticArms
             throw new NotImplementedException();
         }
 
+        public void MoveByVelocity(int x, int y, int z)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MoveByMoment(int x, int y, int z)
+        {
+            throw new NotImplementedException();
+        }
+
+
         public void MoveByVelocity(int numberOfMotor, int valueVelocity, int time)
         {
             throw new NotImplementedException();

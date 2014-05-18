@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace RoboticArm
+namespace RoboticArms
 {
     public partial class Form1 : Form
     {
@@ -19,8 +19,8 @@ namespace RoboticArm
         public void pokus()
         {
 
-            IMotor moturek = new Motor();
-        
+            IRoboticControl ruka = new RoboticArm();
+
         }
     }
 }

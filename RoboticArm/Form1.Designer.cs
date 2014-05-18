@@ -1,4 +1,4 @@
-﻿namespace RoboticArm
+﻿namespace RoboticArms
 {
     partial class Form1
     {

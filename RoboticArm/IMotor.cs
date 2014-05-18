@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace RoboticArm
+namespace RoboticArms
 {
     interface IMotor
     {
@@ -18,6 +18,6 @@ namespace RoboticArm
         void MoveByVelocity(int numberOfMotor, int valueVelocity,int time);
         void MoveByMoment(int numberOfMotor, int valueMoment, int time);
         void MoveToHomePosition();
-        void ReadInputs();
+        double [] ReadInputs();
     }
 }

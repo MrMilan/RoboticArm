@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace RoboticArm
+namespace RoboticArms
 {
     interface IRoboticControl
     {
@@ -16,12 +16,18 @@ namespace RoboticArm
 
         void Initioalization();
         void Calibration();
-        void MoveToPosition();
-        void MoveByVelocity();
-        void MoveByMoment();
-        void SetAcceleration();
-        void SetDeceleration();
-        void SetBordesInitializationPosition();
+        void MoveToPosition(int x, int y, int z);
+        void MoveByVelocity(int x, int y, int z);
+        void MoveByMoment(int x, int y, int z);
+        void MoveToPosition(int numberOfMotor, int position);
+        void MoveByVelocity(int numberOfMotor, int valueVelocity, int time);
+        void MoveByMoment(int numberOfMotor, int valueMoment, int time);
+        void SetAcceleration(int numberOfMotor, int valueAcceleration);
+        void SetDeceleration(int numberOfMotor, int valueAcceleration);
+        void SetAcceleration(int valueAcceleration);
+        void SetDeceleration(int valueAcceleration);
+        void SetBordesInitializationPosition(int numberOfMotor, int minPosition, int maxPosition, int initialPosition);
+        double[] ReadInputs();
 
     }
 }

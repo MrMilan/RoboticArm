@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using RobixLib;
 
-namespace RoboticArm
+namespace RoboticArms
 {
     class Motor : IMotor
     {
@@ -88,7 +88,7 @@ namespace RoboticArm
             CommandToUsbor("restart");
         }
 
-        public void ReadInputs()
+        public double [] ReadInputs()
         {
             throw new NotImplementedException();
         }

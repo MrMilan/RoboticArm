@@ -3,10 +3,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace RoboticArm
+
+namespace RoboticArms
 {
     class Joint:IRoboticControl
     {
+        #region GlobalInternalVariables
+        private List<Joint> jointList;
+        private Units units;
+        private string axisOfRotation;
+        private double distance;
+        private IMotor motor = new Motor();
+
+        #endregion
+
         public int TransformationMatrix
         {
             get
@@ -35,7 +45,7 @@ namespace RoboticArm
         {
             get
             {
-                throw new NotImplementedException();
+                return this.jointList;
             }
             set
             {
@@ -59,11 +69,11 @@ namespace RoboticArm
         {
             get
             {
-                throw new NotImplementedException();
+                return this.distance;
             }
             set
             {
-                throw new NotImplementedException();
+                distance=value;
             }
         }
 
@@ -71,13 +81,17 @@ namespace RoboticArm
         {
             get
             {
-                throw new NotImplementedException();
+                return axisOfRotation;
             }
             set
             {
-                throw new NotImplementedException();
+                axisOfRotation=value;
             }
         }
+
+
+
+
 
         public void Initioalization()
         {
@@ -89,32 +103,52 @@ namespace RoboticArm
             throw new NotImplementedException();
         }
 
-        public void MoveToPosition()
+        public void MoveToPosition(int numberOfMotor, int position)
         {
             throw new NotImplementedException();
         }
 
-        public void MoveByVelocity()
+        public void MoveToPosition(int x, int y, int z)
         {
             throw new NotImplementedException();
         }
 
-        public void MoveByMoment()
+        public void MoveByVelocity(int numberOfMotor, int valueVelocity, int time)
         {
             throw new NotImplementedException();
         }
 
-        public void SetAcceleration()
+        public void MoveByMoment(int numberOfMotor, int valueMoment, int time)
         {
             throw new NotImplementedException();
         }
 
-        public void SetDeceleration()
+        public void SetAcceleration(int numberOfMotor, int valueAcceleration)
         {
             throw new NotImplementedException();
         }
 
-        public void SetBordesInitializationPosition()
+        public void SetDeceleration(int numberOfMotor, int valueAcceleration)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetAcceleration(int valueAcceleration)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetDeceleration(int valueAcceleration)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetBordesInitializationPosition(int numberOfMotor, int minPosition, int maxPosition, int InitialPosition)
+        {
+            throw new NotImplementedException();
+        }
+
+        public double[] ReadInputs()
         {
             throw new NotImplementedException();
         }

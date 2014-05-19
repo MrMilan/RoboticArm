@@ -16,9 +16,9 @@ namespace RoboticArms
 
         void Initioalization();
         void Calibration();
-        void MoveToPosition(int x, int y, int z);
-        void MoveByVelocity(int x, int y, int z);
-        void MoveByMoment(int x, int y, int z);
+        void MoveToPositionR(int x, int y, int z);
+        void MoveByVelocityR(int x, int y, int z);
+        void MoveByMomentR(int x, int y, int z);
         void MoveToPosition(int numberOfMotor, int position);
         void MoveByVelocity(int numberOfMotor, int valueVelocity, int time);
         void MoveByMoment(int numberOfMotor, int valueMoment, int time);
@@ -28,6 +28,7 @@ namespace RoboticArms
         void SetDeceleration(int valueAcceleration);
         void SetBordesInitializationPosition(int numberOfMotor, int minPosition, int maxPosition, int initialPosition);
         double[] ReadInputs();
+        void Connection();
 
     }
 }

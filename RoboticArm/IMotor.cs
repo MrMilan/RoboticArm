@@ -8,6 +8,7 @@ namespace RoboticArms
     interface IMotor
     {
         int AktualPosition { get; }
+        bool VirtualAktualPosition { get; set; }
 
         void SetMaximum(int numberOfMotor, int position);
         void SetMinimum(int numberOfMotor, int position);
@@ -18,6 +19,7 @@ namespace RoboticArms
         void MoveByVelocity(int numberOfMotor, int valueVelocity,int time);
         void MoveByMoment(int numberOfMotor, int valueMoment, int time);
         void MoveToHomePosition();
+        void Connection();
         double [] ReadInputs();
     }
 }

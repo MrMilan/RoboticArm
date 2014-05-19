@@ -9,7 +9,6 @@ namespace RoboticArms
     {
         #region GlobalInternalVariables
         private List<Joint> jointList;
-        private Units units;
         private string axisOfRotation;
         private double distance;
         #endregion
@@ -96,31 +95,28 @@ namespace RoboticArms
             throw new NotImplementedException();
         }
 
+
+
+        public void MoveToPositionR(int x, int y, int z)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MoveByVelocityR(int x, int y, int z)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void MoveByMomentR(int x, int y, int z)
+        {
+            throw new NotImplementedException();
+        }
+
         public void MoveToPosition(int numberOfMotor, int position)
         {
             throw new NotImplementedException();
         }
 
-        public void MoveToPosition(int x, int y, int z)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void MoveByVelocity(int x, int y, int z)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void MoveByMoment(int x, int y, int z)
-        {
-            throw new NotImplementedException();
-        }
-
-
-        public void MoveByVelocity(int numberOfMotor, int valueVelocity, int time)
-        {
-            throw new NotImplementedException();
-        }
         public void MoveByVelocity(int numberOfMotor, int valueVelocity, int time)
         {
             throw new NotImplementedException();
@@ -165,6 +161,15 @@ namespace RoboticArms
         {
             throw new NotImplementedException();
         }
-              
+
+
+
+        public void Connection()
+        {
+            foreach (var joint in jointList)
+            {
+                joint.Connection();
+            }
+        }
     }
 }

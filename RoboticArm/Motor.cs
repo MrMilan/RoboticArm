@@ -13,6 +13,7 @@ namespace RoboticArms
         private int nexusHandle = 0;
         private int usborHandle = 0;
         private int podHandle = 0;
+        private bool virtualPosition = false;
 
         #endregion
 
@@ -93,7 +94,7 @@ namespace RoboticArms
             throw new NotImplementedException();
         }
 
-        public void RobixConnection()
+        public void Connection()
         {
 
             RbxNexwayLib.rbxInitNexwayLib("RobixTest");
@@ -143,7 +144,16 @@ namespace RoboticArms
         private void CommandToUsbor(string command)
         {
             int seq = 1;
-            RbxNexwayLib.rbxPod_runQuickScript(podHandle, ref command, ref seq);
+            try
+            {
+                RbxNexwayLib.rbxPod_runQuickScript(podHandle, ref command, ref seq);
+            }
+            catch (Exception exc)
+            {
+                
+                throw new Exception("Error first must Connection"+exc.Message );
+            }
+            
         }
 
         private string GetStringOfWhiteSpace(int length)
@@ -156,5 +166,18 @@ namespace RoboticArms
             return spaceString;
         }
 
+
+
+        public bool VirtualAktualPosition
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
     }
 }

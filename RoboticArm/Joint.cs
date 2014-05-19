@@ -10,7 +10,6 @@ namespace RoboticArms
     {
         #region GlobalInternalVariables
         private List<Joint> jointList;
-        private Units units;
         private string axisOfRotation;
         private double distance;
         private IMotor motor = new Motor();
@@ -45,7 +44,7 @@ namespace RoboticArms
         {
             get
             {
-                return this.jointList;
+                throw new NotImplementedException();
             }
             set
             {
@@ -95,7 +94,7 @@ namespace RoboticArms
 
         public void Initioalization()
         {
-            throw new NotImplementedException();
+            motor.MoveToHomePosition();
         }
 
         public void Calibration()
@@ -105,20 +104,20 @@ namespace RoboticArms
 
         public void MoveToPosition(int numberOfMotor, int position)
         {
-            throw new NotImplementedException();
+            motor.MoveToPosition(numberOfMotor, position);
         }
 
-        public void MoveToPosition(int x, int y, int z)
+        public void MoveToPositionR(int x, int y, int z)
         {
             throw new NotImplementedException();
         }
 
-        public void MoveByVelocity(int x, int y, int z)
+        public void MoveByVelocityR(int x, int y, int z)
         {
             throw new NotImplementedException();
         }
 
-        public void MoveByMoment(int x, int y, int z)
+        public void MoveByMomentR(int x, int y, int z)
         {
             throw new NotImplementedException();
         }
@@ -135,12 +134,12 @@ namespace RoboticArms
 
         public void SetAcceleration(int numberOfMotor, int valueAcceleration)
         {
-            throw new NotImplementedException();
+            motor.SetAcceleration(numberOfMotor, valueAcceleration);
         }
 
         public void SetDeceleration(int numberOfMotor, int valueAcceleration)
         {
-            throw new NotImplementedException();
+            motor.SetDeceleration(numberOfMotor, valueAcceleration);
         }
 
         public void SetAcceleration(int valueAcceleration)
@@ -153,14 +152,22 @@ namespace RoboticArms
             throw new NotImplementedException();
         }
 
-        public void SetBordesInitializationPosition(int numberOfMotor, int minPosition, int maxPosition, int InitialPosition)
+        public void SetBordesInitializationPosition(int numberOfMotor, int minPosition, int maxPosition, int initialPosition)
         {
-            throw new NotImplementedException();
+            motor.SetMinimum(numberOfMotor, minPosition);
+            motor.SetMaximum(numberOfMotor, maxPosition);
+            motor.SetHomePosition(numberOfMotor,initialPosition);
         }
 
         public double[] ReadInputs()
         {
             throw new NotImplementedException();
+        }
+
+
+        public void Connection()
+        {
+            motor.Connection();
         }
     }
 }

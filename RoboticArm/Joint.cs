@@ -88,7 +88,14 @@ namespace RoboticArms
             }
         }
 
+        public int AktualPosition
+        {
+            get
+            {
+                return motor.AktualPosition;
+            }
 
+        }
 
 
 

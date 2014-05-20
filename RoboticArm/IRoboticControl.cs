@@ -13,6 +13,7 @@ namespace RoboticArms
         double Units { get; set; }
         double Distance { get; set; }
         string AxisOfRotation { get; set; }
+        int AktualPosition { get; }
 
         void Initioalization();
         void Calibration();

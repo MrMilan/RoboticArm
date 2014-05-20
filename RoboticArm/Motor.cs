@@ -13,7 +13,7 @@ namespace RoboticArms
         private int nexusHandle = 0;
         private int usborHandle = 0;
         private int podHandle = 0;
-        private bool virtualPosition = false;
+        private int virtualPosition = 0;
 
         #endregion
 
@@ -21,7 +21,7 @@ namespace RoboticArms
         {
             get
             {
-                throw new NotImplementedException();
+                return this.virtualPosition;
             }
 
         }
@@ -166,18 +166,5 @@ namespace RoboticArms
             return spaceString;
         }
 
-
-
-        public bool VirtualAktualPosition
-        {
-            get
-            {
-                throw new NotImplementedException();
-            }
-            set
-            {
-                throw new NotImplementedException();
-            }
-        }
     }
 }

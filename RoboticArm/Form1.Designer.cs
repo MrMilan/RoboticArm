@@ -121,6 +121,7 @@
             // 
             // vScrollBar6
             // 
+            this.vScrollBar6.Enabled = false;
             this.vScrollBar6.Location = new System.Drawing.Point(317, 46);
             this.vScrollBar6.Maximum = 1400;
             this.vScrollBar6.Minimum = -1400;
@@ -141,6 +142,7 @@
             // 
             // vScrollBar5
             // 
+            this.vScrollBar5.Enabled = false;
             this.vScrollBar5.Location = new System.Drawing.Point(260, 46);
             this.vScrollBar5.Maximum = 1400;
             this.vScrollBar5.Minimum = -1400;
@@ -161,6 +163,7 @@
             // 
             // vScrollBar4
             // 
+            this.vScrollBar4.Enabled = false;
             this.vScrollBar4.Location = new System.Drawing.Point(197, 46);
             this.vScrollBar4.Maximum = 1400;
             this.vScrollBar4.Minimum = -1400;
@@ -181,6 +184,7 @@
             // 
             // vScrollBar3
             // 
+            this.vScrollBar3.Enabled = false;
             this.vScrollBar3.Location = new System.Drawing.Point(139, 46);
             this.vScrollBar3.Maximum = 1400;
             this.vScrollBar3.Minimum = -1400;
@@ -201,6 +205,7 @@
             // 
             // vScrollBar2
             // 
+            this.vScrollBar2.Enabled = false;
             this.vScrollBar2.Location = new System.Drawing.Point(78, 46);
             this.vScrollBar2.Maximum = 1400;
             this.vScrollBar2.Minimum = -1400;
@@ -221,6 +226,7 @@
             // 
             // vScrollBar1
             // 
+            this.vScrollBar1.Enabled = false;
             this.vScrollBar1.Location = new System.Drawing.Point(23, 46);
             this.vScrollBar1.Maximum = 1400;
             this.vScrollBar1.Minimum = -1400;
@@ -232,6 +238,7 @@
             // 
             // btn_Reset
             // 
+            this.btn_Reset.Enabled = false;
             this.btn_Reset.Location = new System.Drawing.Point(16, 285);
             this.btn_Reset.Name = "btn_Reset";
             this.btn_Reset.Size = new System.Drawing.Size(333, 31);
@@ -252,6 +259,7 @@
             // 
             // vScrollBar7
             // 
+            this.vScrollBar7.Enabled = false;
             this.vScrollBar7.Location = new System.Drawing.Point(440, 46);
             this.vScrollBar7.Maximum = 1000;
             this.vScrollBar7.Minimum = 1;
@@ -291,6 +299,7 @@
             // 
             // vScrollBar8
             // 
+            this.vScrollBar8.Enabled = false;
             this.vScrollBar8.Location = new System.Drawing.Point(512, 46);
             this.vScrollBar8.Maximum = 1000;
             this.vScrollBar8.Name = "vScrollBar8";

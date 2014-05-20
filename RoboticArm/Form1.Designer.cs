@@ -46,7 +46,8 @@
             this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
             this.label1 = new System.Windows.Forms.Label();
             this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
-            this.resetBtn = new System.Windows.Forms.Button();
+            this.btn_Reset = new System.Windows.Forms.Button();
+            this.btn_Connect = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label12
@@ -106,11 +107,11 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(314, 238);
+            this.label6.Location = new System.Drawing.Point(324, 238);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 13);
+            this.label6.Size = new System.Drawing.Size(13, 13);
             this.label6.TabIndex = 58;
-            this.label6.Text = "label6";
+            this.label6.Text = "0";
             // 
             // vScrollBar6
             // 
@@ -124,11 +125,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(257, 238);
+            this.label5.Location = new System.Drawing.Point(267, 238);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(13, 13);
             this.label5.TabIndex = 56;
-            this.label5.Text = "label5";
+            this.label5.Text = "0";
             // 
             // vScrollBar5
             // 
@@ -142,11 +143,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(194, 238);
+            this.label4.Location = new System.Drawing.Point(204, 238);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(13, 13);
             this.label4.TabIndex = 54;
-            this.label4.Text = "label4";
+            this.label4.Text = "0";
             // 
             // vScrollBar4
             // 
@@ -160,11 +161,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(136, 238);
+            this.label3.Location = new System.Drawing.Point(147, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.Size = new System.Drawing.Size(13, 13);
             this.label3.TabIndex = 52;
-            this.label3.Text = "label3";
+            this.label3.Text = "0";
             // 
             // vScrollBar3
             // 
@@ -178,11 +179,11 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(75, 238);
+            this.label2.Location = new System.Drawing.Point(86, 238);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.Size = new System.Drawing.Size(13, 13);
             this.label2.TabIndex = 50;
-            this.label2.Text = "label2";
+            this.label2.Text = "0";
             // 
             // vScrollBar2
             // 
@@ -196,11 +197,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 238);
+            this.label1.Location = new System.Drawing.Point(31, 238);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 48;
-            this.label1.Text = "label1";
+            this.label1.Text = "0";
             // 
             // vScrollBar1
             // 
@@ -211,21 +212,31 @@
             this.vScrollBar1.Size = new System.Drawing.Size(32, 178);
             this.vScrollBar1.TabIndex = 47;
             // 
-            // resetBtn
+            // btn_Reset
             // 
-            this.resetBtn.Location = new System.Drawing.Point(16, 285);
-            this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(333, 31);
-            this.resetBtn.TabIndex = 65;
-            this.resetBtn.Text = "Reset na výchozí pozici";
-            this.resetBtn.UseVisualStyleBackColor = true;
+            this.btn_Reset.Location = new System.Drawing.Point(16, 285);
+            this.btn_Reset.Name = "btn_Reset";
+            this.btn_Reset.Size = new System.Drawing.Size(333, 31);
+            this.btn_Reset.TabIndex = 65;
+            this.btn_Reset.Text = "Reset na výchozí pozici";
+            this.btn_Reset.UseVisualStyleBackColor = true;
+            // 
+            // btn_Connect
+            // 
+            this.btn_Connect.Location = new System.Drawing.Point(16, 324);
+            this.btn_Connect.Name = "btn_Connect";
+            this.btn_Connect.Size = new System.Drawing.Size(333, 31);
+            this.btn_Connect.TabIndex = 66;
+            this.btn_Connect.Text = "Připojit";
+            this.btn_Connect.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(387, 342);
-            this.Controls.Add(this.resetBtn);
+            this.ClientSize = new System.Drawing.Size(387, 367);
+            this.Controls.Add(this.btn_Connect);
+            this.Controls.Add(this.btn_Reset);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -245,7 +256,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.vScrollBar1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Robotická paže Robix";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,7 +282,8 @@
         private System.Windows.Forms.VScrollBar vScrollBar2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.VScrollBar vScrollBar1;
-        private System.Windows.Forms.Button resetBtn;
+        private System.Windows.Forms.Button btn_Reset;
+        private System.Windows.Forms.Button btn_Connect;
     }
 }
 

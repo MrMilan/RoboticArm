@@ -9,7 +9,7 @@ namespace RoboticArms
     class Joint:IRoboticControl
     {
         #region GlobalInternalVariables
-        private List<Joint> jointList;
+        private List<Joint> jointList= new List<Joint>();
         private string axisOfRotation;
         private double distance;
         private IMotor motor = new Motor();
@@ -158,6 +158,15 @@ namespace RoboticArms
         {
             throw new NotImplementedException();
         }
+        public void SetMaxSpeed(int numberOfMotor, int valueSpeed)
+        {
+            motor.SetMaxSpeed(numberOfMotor, valueSpeed);
+        }
+
+        public void SetMaxSpeed(int valueSpeed)
+        {
+            throw new NotImplementedException();
+        }
 
         public void SetBordesInitializationPosition(int numberOfMotor, int minPosition, int maxPosition, int initialPosition)
         {
@@ -176,5 +185,6 @@ namespace RoboticArms
         {
             motor.Connection();
         }
+
     }
 }

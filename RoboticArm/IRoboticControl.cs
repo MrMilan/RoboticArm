@@ -27,6 +27,8 @@ namespace RoboticArms
         void SetDeceleration(int numberOfMotor, int valueAcceleration);
         void SetAcceleration(int valueAcceleration);
         void SetDeceleration(int valueAcceleration);
+        void SetMaxSpeed(int numberOfMotor, int valueSpeed);
+        void SetMaxSpeed(int valueSpeed);
         void SetBordesInitializationPosition(int numberOfMotor, int minPosition, int maxPosition, int initialPosition);
         double[] ReadInputs();
         void Connection();

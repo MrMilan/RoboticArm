@@ -5,10 +5,10 @@ using System.Text;
 
 namespace RoboticArms
 {
-    class RoboticArm:IRoboticControl
+    class RoboticArm : IRoboticControl
     {
         #region GlobalInternalVariables
-        private List<Joint> jointList;
+        private List<Joint> jointList = new List<Joint>();
         private string axisOfRotation;
         private double distance;
         #endregion
@@ -45,7 +45,7 @@ namespace RoboticArms
             }
             set
             {
-                throw new NotImplementedException();
+                value = this.jointList;
             }
         }
 
@@ -85,9 +85,17 @@ namespace RoboticArms
             }
         }
 
+        public int AktualPosition
+        {
+            get { throw new NotImplementedException(); }
+        }
+
         public void Initioalization()
         {
-            throw new NotImplementedException();
+            foreach (var joint in jointList)
+            {
+                joint.Initioalization();
+            }
         }
 
         public void Calibration()
@@ -140,7 +148,7 @@ namespace RoboticArms
         {
             foreach (var joint in jointList)
             {
-                joint.SetAcceleration(JointList.IndexOf(joint), valueAcceleration);
+                joint.SetAcceleration(JointList.IndexOf(joint) + 1, valueAcceleration);
             }
         }
 
@@ -148,7 +156,20 @@ namespace RoboticArms
         {
             foreach (var joint in jointList)
             {
-                joint.SetDeceleration(JointList.IndexOf(joint), valueAcceleration);
+                joint.SetDeceleration(JointList.IndexOf(joint) + 1, valueAcceleration);
+            }
+        }
+
+        public void SetMaxSpeed(int numberOfMotor, int valueSpeed)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void SetMaxSpeed(int valueSpeed)
+        {
+            foreach (var joint in jointList)
+            {
+                joint.SetMaxSpeed(JointList.IndexOf(joint) + 1, valueSpeed);
             }
         }
 
@@ -171,5 +192,11 @@ namespace RoboticArms
                 joint.Connection();
             }
         }
+
+
+
+
+
+
     }
 }

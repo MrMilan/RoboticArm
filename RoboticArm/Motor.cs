@@ -38,7 +38,7 @@ namespace RoboticArms
 
         public void SetAcceleration(int numberOfMotor, int valueAcceleration)
         {
-            if (valueAcceleration > 1 && valueAcceleration < 10001)
+            if (valueAcceleration >= 1 && valueAcceleration < 10001)
             {
                 CommandToUsbor("accel " + numberOfMotor.ToString() + " " + valueAcceleration.ToString());
             }
@@ -52,7 +52,7 @@ namespace RoboticArms
         public void SetDeceleration(int numberOfMotor, int valueAcceleration)
         {
 
-            if (valueAcceleration > 1 && valueAcceleration < 10001)
+            if (valueAcceleration >= 1 && valueAcceleration < 10001)
             {
                 CommandToUsbor("decel " + numberOfMotor.ToString() + " " + valueAcceleration.ToString());
             }
@@ -60,6 +60,15 @@ namespace RoboticArms
             {
                 throw new ArgumentException("Value must be between 1 and 10000");
             }
+        }
+
+        public void SetMaxSpeed(int numberOfMotor, int valueSpeed)
+        {
+
+
+                CommandToUsbor("maxspd " + numberOfMotor.ToString() + " " + valueSpeed.ToString());
+
+
         }
 
         public void SetHomePosition(int numberOfMotor, int position)

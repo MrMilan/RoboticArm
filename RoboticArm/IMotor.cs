@@ -13,6 +13,7 @@ namespace RoboticArms
         void SetMinimum(int numberOfMotor, int position);
         void SetAcceleration(int numberOfMotor, int valueAcceleration);
         void SetDeceleration(int numberOfMotor, int valueAcceleration);
+        void SetMaxSpeed(int numberOfMotor, int valueSpeed);
         void SetHomePosition(int numberOfMotor, int position);
         void MoveToPosition(int numberOfMotor, int position);
         void MoveByVelocity(int numberOfMotor, int valueVelocity,int time);

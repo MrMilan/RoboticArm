@@ -10,7 +10,9 @@ namespace RoboticArms
         int TransformationMatrix { get; set; }
         int InertialMatrix { get; set; }
         List<Joint> JointList { get; set; }
-        double Units { get; set; }
+        string TimeUnits { get; set; }
+        string VelocityUnits { get; set; }
+        string LenghtUnits { get; set; }
         double Distance { get; set; }
         string AxisOfRotation { get; set; }
         int AktualPosition { get; }

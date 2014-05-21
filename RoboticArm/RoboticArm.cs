@@ -49,7 +49,31 @@ namespace RoboticArms
             }
         }
 
-        public double Units
+        public string TimeUnits
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public string VelocityUnits
+        {
+            get
+            {
+                throw new NotImplementedException();
+            }
+            set
+            {
+                throw new NotImplementedException();
+            }
+        }
+
+        public string LenghtUnits
         {
             get
             {

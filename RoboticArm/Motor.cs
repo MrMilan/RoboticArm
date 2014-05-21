@@ -160,7 +160,7 @@ namespace RoboticArms
             catch (Exception exc)
             {
                 
-                throw new Exception("Error first must Connection"+exc.Message );
+                throw new Exception("Error first must Connection "+exc.Message );
             }
             
         }

@@ -28,213 +28,213 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.vScrollBar6 = new System.Windows.Forms.VScrollBar();
-            this.label5 = new System.Windows.Forms.Label();
-            this.vScrollBar5 = new System.Windows.Forms.VScrollBar();
-            this.label4 = new System.Windows.Forms.Label();
-            this.vScrollBar4 = new System.Windows.Forms.VScrollBar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.vScrollBar3 = new System.Windows.Forms.VScrollBar();
-            this.label2 = new System.Windows.Forms.Label();
-            this.vScrollBar2 = new System.Windows.Forms.VScrollBar();
-            this.label1 = new System.Windows.Forms.Label();
-            this.vScrollBar1 = new System.Windows.Forms.VScrollBar();
+            this.lblTextGrip = new System.Windows.Forms.Label();
+            this.lblTextWrist = new System.Windows.Forms.Label();
+            this.lblTextJoint4 = new System.Windows.Forms.Label();
+            this.lblTextJoint3 = new System.Windows.Forms.Label();
+            this.lblTextJoint2 = new System.Windows.Forms.Label();
+            this.lblTextJoint1 = new System.Windows.Forms.Label();
+            this.lblGrip = new System.Windows.Forms.Label();
+            this.vScrollBGrip = new System.Windows.Forms.VScrollBar();
+            this.lblWrist = new System.Windows.Forms.Label();
+            this.vScrollBWrist = new System.Windows.Forms.VScrollBar();
+            this.lblJoint4 = new System.Windows.Forms.Label();
+            this.vScrollBJoint4 = new System.Windows.Forms.VScrollBar();
+            this.lblJoint3 = new System.Windows.Forms.Label();
+            this.vScrollBJoint3 = new System.Windows.Forms.VScrollBar();
+            this.lblJoint2 = new System.Windows.Forms.Label();
+            this.vScrollBJoint2 = new System.Windows.Forms.VScrollBar();
+            this.lblJoint1 = new System.Windows.Forms.Label();
+            this.vScrollBJoint1 = new System.Windows.Forms.VScrollBar();
             this.btn_Reset = new System.Windows.Forms.Button();
             this.btn_Connect = new System.Windows.Forms.Button();
-            this.vScrollBar7 = new System.Windows.Forms.VScrollBar();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.vScrollBar8 = new System.Windows.Forms.VScrollBar();
-            this.label14 = new System.Windows.Forms.Label();
+            this.vScrollBAcell = new System.Windows.Forms.VScrollBar();
+            this.lblTextAccel = new System.Windows.Forms.Label();
+            this.lblAccel = new System.Windows.Forms.Label();
+            this.lblSpeed = new System.Windows.Forms.Label();
+            this.vScrollBSpeed = new System.Windows.Forms.VScrollBar();
+            this.lblTextSpeed = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label12
+            // lblTextGrip
             // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(319, 21);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(30, 13);
-            this.label12.TabIndex = 64;
-            this.label12.Text = "Stisk";
+            this.lblTextGrip.AutoSize = true;
+            this.lblTextGrip.Location = new System.Drawing.Point(319, 21);
+            this.lblTextGrip.Name = "lblTextGrip";
+            this.lblTextGrip.Size = new System.Drawing.Size(30, 13);
+            this.lblTextGrip.TabIndex = 64;
+            this.lblTextGrip.Text = "Stisk";
             // 
-            // label11
+            // lblTextWrist
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(246, 21);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 13);
-            this.label11.TabIndex = 63;
-            this.label11.Text = "Rotace záp.";
+            this.lblTextWrist.AutoSize = true;
+            this.lblTextWrist.Location = new System.Drawing.Point(246, 21);
+            this.lblTextWrist.Name = "lblTextWrist";
+            this.lblTextWrist.Size = new System.Drawing.Size(65, 13);
+            this.lblTextWrist.TabIndex = 63;
+            this.lblTextWrist.Text = "Rotace záp.";
             // 
-            // label10
+            // lblTextJoint4
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(194, 21);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 13);
-            this.label10.TabIndex = 62;
-            this.label10.Text = "Kloub 4";
+            this.lblTextJoint4.AutoSize = true;
+            this.lblTextJoint4.Location = new System.Drawing.Point(194, 21);
+            this.lblTextJoint4.Name = "lblTextJoint4";
+            this.lblTextJoint4.Size = new System.Drawing.Size(43, 13);
+            this.lblTextJoint4.TabIndex = 62;
+            this.lblTextJoint4.Text = "Kloub 4";
             // 
-            // label9
+            // lblTextJoint3
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(136, 21);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(43, 13);
-            this.label9.TabIndex = 61;
-            this.label9.Text = "Kloub 3";
+            this.lblTextJoint3.AutoSize = true;
+            this.lblTextJoint3.Location = new System.Drawing.Point(136, 21);
+            this.lblTextJoint3.Name = "lblTextJoint3";
+            this.lblTextJoint3.Size = new System.Drawing.Size(43, 13);
+            this.lblTextJoint3.TabIndex = 61;
+            this.lblTextJoint3.Text = "Kloub 3";
             // 
-            // label8
+            // lblTextJoint2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(75, 21);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 60;
-            this.label8.Text = "Kloub 2";
+            this.lblTextJoint2.AutoSize = true;
+            this.lblTextJoint2.Location = new System.Drawing.Point(75, 21);
+            this.lblTextJoint2.Name = "lblTextJoint2";
+            this.lblTextJoint2.Size = new System.Drawing.Size(43, 13);
+            this.lblTextJoint2.TabIndex = 60;
+            this.lblTextJoint2.Text = "Kloub 2";
             // 
-            // label7
+            // lblTextJoint1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(21, 21);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 13);
-            this.label7.TabIndex = 59;
-            this.label7.Text = "Kloub 1";
+            this.lblTextJoint1.AutoSize = true;
+            this.lblTextJoint1.Location = new System.Drawing.Point(21, 21);
+            this.lblTextJoint1.Name = "lblTextJoint1";
+            this.lblTextJoint1.Size = new System.Drawing.Size(43, 13);
+            this.lblTextJoint1.TabIndex = 59;
+            this.lblTextJoint1.Text = "Kloub 1";
             // 
-            // label6
+            // lblGrip
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(324, 238);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
-            this.label6.TabIndex = 58;
-            this.label6.Text = "0";
+            this.lblGrip.AutoSize = true;
+            this.lblGrip.Location = new System.Drawing.Point(324, 238);
+            this.lblGrip.Name = "lblGrip";
+            this.lblGrip.Size = new System.Drawing.Size(13, 13);
+            this.lblGrip.TabIndex = 58;
+            this.lblGrip.Text = "0";
             // 
-            // vScrollBar6
+            // vScrollBGrip
             // 
-            this.vScrollBar6.Enabled = false;
-            this.vScrollBar6.Location = new System.Drawing.Point(317, 46);
-            this.vScrollBar6.Maximum = 1400;
-            this.vScrollBar6.Minimum = -1400;
-            this.vScrollBar6.Name = "vScrollBar6";
-            this.vScrollBar6.Size = new System.Drawing.Size(32, 178);
-            this.vScrollBar6.TabIndex = 57;
-            this.vScrollBar6.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar6_Scroll);
-            this.vScrollBar6.MouseLeave += new System.EventHandler(this.vScrollBar6_MouseLeave);
+            this.vScrollBGrip.Enabled = false;
+            this.vScrollBGrip.Location = new System.Drawing.Point(317, 46);
+            this.vScrollBGrip.Maximum = 1400;
+            this.vScrollBGrip.Minimum = -1400;
+            this.vScrollBGrip.Name = "vScrollBGrip";
+            this.vScrollBGrip.Size = new System.Drawing.Size(32, 178);
+            this.vScrollBGrip.TabIndex = 57;
+            this.vScrollBGrip.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBGrip_Scroll);
+            this.vScrollBGrip.MouseLeave += new System.EventHandler(this.vScrollBGrip_MouseLeave);
             // 
-            // label5
+            // lblWrist
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(267, 238);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
-            this.label5.TabIndex = 56;
-            this.label5.Text = "0";
+            this.lblWrist.AutoSize = true;
+            this.lblWrist.Location = new System.Drawing.Point(267, 238);
+            this.lblWrist.Name = "lblWrist";
+            this.lblWrist.Size = new System.Drawing.Size(13, 13);
+            this.lblWrist.TabIndex = 56;
+            this.lblWrist.Text = "0";
             // 
-            // vScrollBar5
+            // vScrollBWrist
             // 
-            this.vScrollBar5.Enabled = false;
-            this.vScrollBar5.Location = new System.Drawing.Point(260, 46);
-            this.vScrollBar5.Maximum = 1400;
-            this.vScrollBar5.Minimum = -1400;
-            this.vScrollBar5.Name = "vScrollBar5";
-            this.vScrollBar5.Size = new System.Drawing.Size(32, 178);
-            this.vScrollBar5.TabIndex = 55;
-            this.vScrollBar5.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar5_Scroll);
-            this.vScrollBar5.MouseLeave += new System.EventHandler(this.vScrollBar5_MouseLeave);
+            this.vScrollBWrist.Enabled = false;
+            this.vScrollBWrist.Location = new System.Drawing.Point(260, 46);
+            this.vScrollBWrist.Maximum = 1400;
+            this.vScrollBWrist.Minimum = -1400;
+            this.vScrollBWrist.Name = "vScrollBWrist";
+            this.vScrollBWrist.Size = new System.Drawing.Size(32, 178);
+            this.vScrollBWrist.TabIndex = 55;
+            this.vScrollBWrist.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBWrist_Scroll);
+            this.vScrollBWrist.MouseLeave += new System.EventHandler(this.vScrollBWrist_MouseLeave);
             // 
-            // label4
+            // lblJoint4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(204, 238);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(13, 13);
-            this.label4.TabIndex = 54;
-            this.label4.Text = "0";
+            this.lblJoint4.AutoSize = true;
+            this.lblJoint4.Location = new System.Drawing.Point(204, 238);
+            this.lblJoint4.Name = "lblJoint4";
+            this.lblJoint4.Size = new System.Drawing.Size(13, 13);
+            this.lblJoint4.TabIndex = 54;
+            this.lblJoint4.Text = "0";
             // 
-            // vScrollBar4
+            // vScrollBJoint4
             // 
-            this.vScrollBar4.Enabled = false;
-            this.vScrollBar4.Location = new System.Drawing.Point(197, 46);
-            this.vScrollBar4.Maximum = 1400;
-            this.vScrollBar4.Minimum = -1400;
-            this.vScrollBar4.Name = "vScrollBar4";
-            this.vScrollBar4.Size = new System.Drawing.Size(32, 178);
-            this.vScrollBar4.TabIndex = 53;
-            this.vScrollBar4.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar4_Scroll);
-            this.vScrollBar4.MouseLeave += new System.EventHandler(this.vScrollBar4_MouseLeave);
+            this.vScrollBJoint4.Enabled = false;
+            this.vScrollBJoint4.Location = new System.Drawing.Point(197, 46);
+            this.vScrollBJoint4.Maximum = 1400;
+            this.vScrollBJoint4.Minimum = -1400;
+            this.vScrollBJoint4.Name = "vScrollBJoint4";
+            this.vScrollBJoint4.Size = new System.Drawing.Size(32, 178);
+            this.vScrollBJoint4.TabIndex = 53;
+            this.vScrollBJoint4.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBJoint4_Scroll);
+            this.vScrollBJoint4.MouseLeave += new System.EventHandler(this.vScrollBJoint4_MouseLeave);
             // 
-            // label3
+            // lblJoint3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(147, 238);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 13);
-            this.label3.TabIndex = 52;
-            this.label3.Text = "0";
+            this.lblJoint3.AutoSize = true;
+            this.lblJoint3.Location = new System.Drawing.Point(147, 238);
+            this.lblJoint3.Name = "lblJoint3";
+            this.lblJoint3.Size = new System.Drawing.Size(13, 13);
+            this.lblJoint3.TabIndex = 52;
+            this.lblJoint3.Text = "0";
             // 
-            // vScrollBar3
+            // vScrollBJoint3
             // 
-            this.vScrollBar3.Enabled = false;
-            this.vScrollBar3.Location = new System.Drawing.Point(139, 46);
-            this.vScrollBar3.Maximum = 1400;
-            this.vScrollBar3.Minimum = -1400;
-            this.vScrollBar3.Name = "vScrollBar3";
-            this.vScrollBar3.Size = new System.Drawing.Size(32, 178);
-            this.vScrollBar3.TabIndex = 51;
-            this.vScrollBar3.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar3_Scroll);
-            this.vScrollBar3.MouseLeave += new System.EventHandler(this.vScrollBar3_MouseLeave);
+            this.vScrollBJoint3.Enabled = false;
+            this.vScrollBJoint3.Location = new System.Drawing.Point(139, 46);
+            this.vScrollBJoint3.Maximum = 1400;
+            this.vScrollBJoint3.Minimum = -1400;
+            this.vScrollBJoint3.Name = "vScrollBJoint3";
+            this.vScrollBJoint3.Size = new System.Drawing.Size(32, 178);
+            this.vScrollBJoint3.TabIndex = 51;
+            this.vScrollBJoint3.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBJoint3_Scroll);
+            this.vScrollBJoint3.MouseLeave += new System.EventHandler(this.vScrollBJoint3_MouseLeave);
             // 
-            // label2
+            // lblJoint2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(86, 238);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(13, 13);
-            this.label2.TabIndex = 50;
-            this.label2.Text = "0";
+            this.lblJoint2.AutoSize = true;
+            this.lblJoint2.Location = new System.Drawing.Point(86, 238);
+            this.lblJoint2.Name = "lblJoint2";
+            this.lblJoint2.Size = new System.Drawing.Size(13, 13);
+            this.lblJoint2.TabIndex = 50;
+            this.lblJoint2.Text = "0";
             // 
-            // vScrollBar2
+            // vScrollBJoint2
             // 
-            this.vScrollBar2.Enabled = false;
-            this.vScrollBar2.Location = new System.Drawing.Point(78, 46);
-            this.vScrollBar2.Maximum = 1400;
-            this.vScrollBar2.Minimum = -1400;
-            this.vScrollBar2.Name = "vScrollBar2";
-            this.vScrollBar2.Size = new System.Drawing.Size(32, 178);
-            this.vScrollBar2.TabIndex = 49;
-            this.vScrollBar2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar2_Scroll);
-            this.vScrollBar2.MouseLeave += new System.EventHandler(this.vScrollBar2_MouseLeave);
+            this.vScrollBJoint2.Enabled = false;
+            this.vScrollBJoint2.Location = new System.Drawing.Point(78, 46);
+            this.vScrollBJoint2.Maximum = 1400;
+            this.vScrollBJoint2.Minimum = -1400;
+            this.vScrollBJoint2.Name = "vScrollBJoint2";
+            this.vScrollBJoint2.Size = new System.Drawing.Size(32, 178);
+            this.vScrollBJoint2.TabIndex = 49;
+            this.vScrollBJoint2.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBJoint2_Scroll);
+            this.vScrollBJoint2.MouseLeave += new System.EventHandler(this.vScrollBJoint2_MouseLeave);
             // 
-            // label1
+            // lblJoint1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 238);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(13, 13);
-            this.label1.TabIndex = 48;
-            this.label1.Text = "0";
+            this.lblJoint1.AutoSize = true;
+            this.lblJoint1.Location = new System.Drawing.Point(31, 238);
+            this.lblJoint1.Name = "lblJoint1";
+            this.lblJoint1.Size = new System.Drawing.Size(13, 13);
+            this.lblJoint1.TabIndex = 48;
+            this.lblJoint1.Text = "0";
             // 
-            // vScrollBar1
+            // vScrollBJoint1
             // 
-            this.vScrollBar1.Enabled = false;
-            this.vScrollBar1.Location = new System.Drawing.Point(23, 46);
-            this.vScrollBar1.Maximum = 1400;
-            this.vScrollBar1.Minimum = -1400;
-            this.vScrollBar1.Name = "vScrollBar1";
-            this.vScrollBar1.Size = new System.Drawing.Size(32, 178);
-            this.vScrollBar1.TabIndex = 47;
-            this.vScrollBar1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar1_Scroll);
-            this.vScrollBar1.MouseLeave += new System.EventHandler(this.vScrollBar1_MouseLeave);
+            this.vScrollBJoint1.Enabled = false;
+            this.vScrollBJoint1.Location = new System.Drawing.Point(23, 46);
+            this.vScrollBJoint1.Maximum = 1400;
+            this.vScrollBJoint1.Minimum = -1400;
+            this.vScrollBJoint1.Name = "vScrollBJoint1";
+            this.vScrollBJoint1.Size = new System.Drawing.Size(32, 178);
+            this.vScrollBJoint1.TabIndex = 47;
+            this.vScrollBJoint1.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBJoint1_Scroll);
+            this.vScrollBJoint1.MouseLeave += new System.EventHandler(this.vScrollBJoint1_MouseLeave);
             // 
             // btn_Reset
             // 
@@ -257,65 +257,65 @@
             this.btn_Connect.UseVisualStyleBackColor = true;
             this.btn_Connect.Click += new System.EventHandler(this.btn_Connect_Click);
             // 
-            // vScrollBar7
+            // vScrollBAcell
             // 
-            this.vScrollBar7.Enabled = false;
-            this.vScrollBar7.Location = new System.Drawing.Point(440, 46);
-            this.vScrollBar7.Maximum = 1000;
-            this.vScrollBar7.Minimum = 1;
-            this.vScrollBar7.Name = "vScrollBar7";
-            this.vScrollBar7.Size = new System.Drawing.Size(32, 178);
-            this.vScrollBar7.TabIndex = 47;
-            this.vScrollBar7.Value = 1;
-            this.vScrollBar7.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar7_Scroll);
-            this.vScrollBar7.MouseLeave += new System.EventHandler(this.vScrollBar7_MouseLeave);
+            this.vScrollBAcell.Enabled = false;
+            this.vScrollBAcell.Location = new System.Drawing.Point(440, 46);
+            this.vScrollBAcell.Maximum = 1000;
+            this.vScrollBAcell.Minimum = 1;
+            this.vScrollBAcell.Name = "vScrollBAcell";
+            this.vScrollBAcell.Size = new System.Drawing.Size(32, 178);
+            this.vScrollBAcell.TabIndex = 47;
+            this.vScrollBAcell.Value = 1;
+            this.vScrollBAcell.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBAccel_Scroll);
+            this.vScrollBAcell.MouseLeave += new System.EventHandler(this.vScrollBAccel_MouseLeave);
             // 
-            // label13
+            // lblTextAccel
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(437, 21);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(52, 13);
-            this.label13.TabIndex = 59;
-            this.label13.Text = "Zrychlení";
+            this.lblTextAccel.AutoSize = true;
+            this.lblTextAccel.Location = new System.Drawing.Point(437, 21);
+            this.lblTextAccel.Name = "lblTextAccel";
+            this.lblTextAccel.Size = new System.Drawing.Size(52, 13);
+            this.lblTextAccel.TabIndex = 59;
+            this.lblTextAccel.Text = "Zrychlení";
             // 
-            // label15
+            // lblAccel
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(452, 238);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(13, 13);
-            this.label15.TabIndex = 56;
-            this.label15.Text = "0";
+            this.lblAccel.AutoSize = true;
+            this.lblAccel.Location = new System.Drawing.Point(452, 238);
+            this.lblAccel.Name = "lblAccel";
+            this.lblAccel.Size = new System.Drawing.Size(13, 13);
+            this.lblAccel.TabIndex = 56;
+            this.lblAccel.Text = "0";
             // 
-            // label16
+            // lblSpeed
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(522, 238);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(13, 13);
-            this.label16.TabIndex = 58;
-            this.label16.Text = "0";
+            this.lblSpeed.AutoSize = true;
+            this.lblSpeed.Location = new System.Drawing.Point(522, 238);
+            this.lblSpeed.Name = "lblSpeed";
+            this.lblSpeed.Size = new System.Drawing.Size(13, 13);
+            this.lblSpeed.TabIndex = 58;
+            this.lblSpeed.Text = "0";
             // 
-            // vScrollBar8
+            // vScrollBSpeed
             // 
-            this.vScrollBar8.Enabled = false;
-            this.vScrollBar8.Location = new System.Drawing.Point(512, 46);
-            this.vScrollBar8.Maximum = 1000;
-            this.vScrollBar8.Name = "vScrollBar8";
-            this.vScrollBar8.Size = new System.Drawing.Size(32, 178);
-            this.vScrollBar8.TabIndex = 47;
-            this.vScrollBar8.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBar8_Scroll);
-            this.vScrollBar8.MouseLeave += new System.EventHandler(this.vScrollBar8_MouseLeave);
+            this.vScrollBSpeed.Enabled = false;
+            this.vScrollBSpeed.Location = new System.Drawing.Point(512, 46);
+            this.vScrollBSpeed.Maximum = 1000;
+            this.vScrollBSpeed.Name = "vScrollBSpeed";
+            this.vScrollBSpeed.Size = new System.Drawing.Size(32, 178);
+            this.vScrollBSpeed.TabIndex = 47;
+            this.vScrollBSpeed.Scroll += new System.Windows.Forms.ScrollEventHandler(this.vScrollBSpeed_Scroll);
+            this.vScrollBSpeed.MouseLeave += new System.EventHandler(this.vScrollBSpeed_MouseLeave);
             // 
-            // label14
+            // lblTextSpeed
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(496, 21);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 13);
-            this.label14.TabIndex = 59;
-            this.label14.Text = "Max. rychlost";
+            this.lblTextSpeed.AutoSize = true;
+            this.lblTextSpeed.Location = new System.Drawing.Point(496, 21);
+            this.lblTextSpeed.Name = "lblTextSpeed";
+            this.lblTextSpeed.Size = new System.Drawing.Size(69, 13);
+            this.lblTextSpeed.TabIndex = 59;
+            this.lblTextSpeed.Text = "Max. rychlost";
             // 
             // Form1
             // 
@@ -324,30 +324,30 @@
             this.ClientSize = new System.Drawing.Size(569, 367);
             this.Controls.Add(this.btn_Connect);
             this.Controls.Add(this.btn_Reset);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.vScrollBar6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.vScrollBar5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.vScrollBar4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.vScrollBar3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.vScrollBar2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.vScrollBar8);
-            this.Controls.Add(this.vScrollBar7);
-            this.Controls.Add(this.vScrollBar1);
+            this.Controls.Add(this.lblTextGrip);
+            this.Controls.Add(this.lblTextWrist);
+            this.Controls.Add(this.lblTextJoint4);
+            this.Controls.Add(this.lblTextJoint3);
+            this.Controls.Add(this.lblTextJoint2);
+            this.Controls.Add(this.lblTextSpeed);
+            this.Controls.Add(this.lblTextAccel);
+            this.Controls.Add(this.lblTextJoint1);
+            this.Controls.Add(this.lblSpeed);
+            this.Controls.Add(this.lblGrip);
+            this.Controls.Add(this.lblAccel);
+            this.Controls.Add(this.vScrollBGrip);
+            this.Controls.Add(this.lblWrist);
+            this.Controls.Add(this.vScrollBWrist);
+            this.Controls.Add(this.lblJoint4);
+            this.Controls.Add(this.vScrollBJoint4);
+            this.Controls.Add(this.lblJoint3);
+            this.Controls.Add(this.vScrollBJoint3);
+            this.Controls.Add(this.lblJoint2);
+            this.Controls.Add(this.vScrollBJoint2);
+            this.Controls.Add(this.lblJoint1);
+            this.Controls.Add(this.vScrollBSpeed);
+            this.Controls.Add(this.vScrollBAcell);
+            this.Controls.Add(this.vScrollBJoint1);
             this.Name = "Form1";
             this.Text = "Robotická paže Robix";
             this.ResumeLayout(false);
@@ -357,32 +357,32 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.VScrollBar vScrollBar6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.VScrollBar vScrollBar5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.VScrollBar vScrollBar4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.VScrollBar vScrollBar3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.VScrollBar vScrollBar2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.VScrollBar vScrollBar1;
+        private System.Windows.Forms.Label lblTextGrip;
+        private System.Windows.Forms.Label lblTextWrist;
+        private System.Windows.Forms.Label lblTextJoint4;
+        private System.Windows.Forms.Label lblTextJoint3;
+        private System.Windows.Forms.Label lblTextJoint2;
+        private System.Windows.Forms.Label lblTextJoint1;
+        private System.Windows.Forms.Label lblGrip;
+        private System.Windows.Forms.VScrollBar vScrollBGrip;
+        private System.Windows.Forms.Label lblWrist;
+        private System.Windows.Forms.VScrollBar vScrollBWrist;
+        private System.Windows.Forms.Label lblJoint4;
+        private System.Windows.Forms.VScrollBar vScrollBJoint4;
+        private System.Windows.Forms.Label lblJoint3;
+        private System.Windows.Forms.VScrollBar vScrollBJoint3;
+        private System.Windows.Forms.Label lblJoint2;
+        private System.Windows.Forms.VScrollBar vScrollBJoint2;
+        private System.Windows.Forms.Label lblJoint1;
+        private System.Windows.Forms.VScrollBar vScrollBJoint1;
         private System.Windows.Forms.Button btn_Reset;
         private System.Windows.Forms.Button btn_Connect;
-        private System.Windows.Forms.VScrollBar vScrollBar7;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.VScrollBar vScrollBar8;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.VScrollBar vScrollBAcell;
+        private System.Windows.Forms.Label lblTextAccel;
+        private System.Windows.Forms.Label lblAccel;
+        private System.Windows.Forms.Label lblSpeed;
+        private System.Windows.Forms.VScrollBar vScrollBSpeed;
+        private System.Windows.Forms.Label lblTextSpeed;
     }
 }
 

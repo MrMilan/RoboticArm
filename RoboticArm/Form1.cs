@@ -13,8 +13,8 @@ namespace RoboticArms
     {
 
         private IRoboticControl robotickaPazeRobix = new RoboticArm();
-        private int motorPosition1, motorPosition2, motorPosition3, motorPosition4, motorPosition5, motorPosition6, acceleration, maxSpeed;
-
+        private int acceleration=10, maxSpeed=100;
+        private int [] motorPosition = new int[6];
         public Form1()
         {
             InitializeComponent();
@@ -33,86 +33,106 @@ namespace RoboticArms
         private void btn_Connect_Click(object sender, EventArgs e)
         {
             robotickaPazeRobix.Connection();
+            robotickaPazeRobix.Initioalization();
+            robotickaPazeRobix.SetMaxSpeed(maxSpeed);
+            robotickaPazeRobix.SetAcceleration(acceleration);
+            vScrollBJoint1.Enabled = true;
+            vScrollBJoint2.Enabled = true;
+            vScrollBJoint3.Enabled = true;
+            vScrollBJoint4.Enabled = true;
+            vScrollBWrist.Enabled = true;
+            vScrollBGrip.Enabled = true;
+            vScrollBAcell.Enabled = true;
+            vScrollBSpeed.Enabled = true;
+
+            vScrollBAcell.Value = acceleration;
+            vScrollBSpeed.Value = maxSpeed;
+
+            lblAccel.Text=acceleration.ToString();
+            lblSpeed.Text = maxSpeed.ToString();
+
+            btn_Reset.Enabled = true;
+
         }
 
-        private void vScrollBar1_Scroll(object sender, ScrollEventArgs e)
+        private void vScrollBJoint1_Scroll(object sender, ScrollEventArgs e)
         {
-            motorPosition1 = vScrollBar1.Value;
-            label1.Text = Convert.ToString(motorPosition1);
+            motorPosition[0] = vScrollBJoint1.Value;
+            lblJoint1.Text = Convert.ToString(motorPosition[0]);
         }
-        private void vScrollBar2_Scroll(object sender, ScrollEventArgs e)
+        private void vScrollBJoint2_Scroll(object sender, ScrollEventArgs e)
         {
-            motorPosition2 = vScrollBar2.Value;
-            label2.Text = Convert.ToString(motorPosition2);
+            motorPosition[1] = vScrollBJoint2.Value;
+            lblJoint2.Text = Convert.ToString(motorPosition[1]);
 
         }
 
-        private void vScrollBar3_Scroll(object sender, ScrollEventArgs e)
+        private void vScrollBJoint3_Scroll(object sender, ScrollEventArgs e)
         {
-            motorPosition3 = vScrollBar3.Value;
-            label3.Text = Convert.ToString(motorPosition3);
+            motorPosition[2] = vScrollBJoint3.Value;
+            lblJoint3.Text = Convert.ToString(motorPosition[2]);
 
         }
 
-        private void vScrollBar4_Scroll(object sender, ScrollEventArgs e)
+        private void vScrollBJoint4_Scroll(object sender, ScrollEventArgs e)
         {
-            motorPosition4 = vScrollBar4.Value;
-            label4.Text = Convert.ToString(motorPosition4);
+            motorPosition[3] = vScrollBJoint4.Value;
+            lblJoint4.Text = Convert.ToString(motorPosition[3]);
         }
 
-        private void vScrollBar5_Scroll(object sender, ScrollEventArgs e)
+        private void vScrollBWrist_Scroll(object sender, ScrollEventArgs e)
         {
-            motorPosition5 = vScrollBar5.Value;
-            label5.Text = Convert.ToString(motorPosition5);
+            motorPosition[4] = vScrollBWrist.Value;
+            lblWrist.Text = Convert.ToString(motorPosition[4]);
         }
 
-        private void vScrollBar6_Scroll(object sender, ScrollEventArgs e)
+        private void vScrollBGrip_Scroll(object sender, ScrollEventArgs e)
         {
-            motorPosition6 = vScrollBar6.Value;
-            label6.Text = Convert.ToString(motorPosition6);
+            motorPosition[5] = vScrollBGrip.Value;
+            lblGrip.Text = Convert.ToString(motorPosition[5]);
         }
 
-        private void vScrollBar7_Scroll(object sender, ScrollEventArgs e)
+        private void vScrollBAccel_Scroll(object sender, ScrollEventArgs e)
         {
-            acceleration = vScrollBar7.Value;
-            label15.Text = Convert.ToString(acceleration);
+            acceleration = vScrollBAcell.Value;
+            lblAccel.Text = Convert.ToString(acceleration);
         }
 
-        private void vScrollBar8_Scroll(object sender, ScrollEventArgs e)
+        private void vScrollBSpeed_Scroll(object sender, ScrollEventArgs e)
         {
-            maxSpeed = vScrollBar8.Value;
-            label16.Text = Convert.ToString(maxSpeed);
+            maxSpeed = vScrollBSpeed.Value;
+            lblSpeed.Text = Convert.ToString(maxSpeed);
         }
 
-        private void vScrollBar1_MouseLeave(object sender, EventArgs e)
+        private void vScrollBJoint1_MouseLeave(object sender, EventArgs e)
         {
-            robotickaPazeRobix.JointList[0].MoveToPosition(1, motorPosition1);
+            robotickaPazeRobix.JointList[0].MoveToPosition(1, motorPosition[0]);
         }
-        private void vScrollBar2_MouseLeave(object sender, EventArgs e)
+        private void vScrollBJoint2_MouseLeave(object sender, EventArgs e)
         {
-            robotickaPazeRobix.JointList[1].MoveToPosition(2, motorPosition2);
+            robotickaPazeRobix.JointList[1].MoveToPosition(2, motorPosition[1]);
         }
-        private void vScrollBar3_MouseLeave(object sender, EventArgs e)
+        private void vScrollBJoint3_MouseLeave(object sender, EventArgs e)
         {
-            robotickaPazeRobix.JointList[2].MoveToPosition(3, motorPosition3);
+            robotickaPazeRobix.JointList[2].MoveToPosition(3, motorPosition[2]);
         }
-        private void vScrollBar4_MouseLeave(object sender, EventArgs e)
+        private void vScrollBJoint4_MouseLeave(object sender, EventArgs e)
         {
-            robotickaPazeRobix.JointList[3].MoveToPosition(4, motorPosition4);
+            robotickaPazeRobix.JointList[3].MoveToPosition(4, motorPosition[3]);
         }
-        private void vScrollBar5_MouseLeave(object sender, EventArgs e)
+        private void vScrollBWrist_MouseLeave(object sender, EventArgs e)
         {
-            robotickaPazeRobix.JointList[4].MoveToPosition(5, motorPosition5);
+            robotickaPazeRobix.JointList[4].MoveToPosition(5, motorPosition[4]);
         }
-        private void vScrollBar6_MouseLeave(object sender, EventArgs e)
+        private void vScrollBGrip_MouseLeave(object sender, EventArgs e)
         {
-            robotickaPazeRobix.JointList[5].MoveToPosition(6, motorPosition6);
+            robotickaPazeRobix.JointList[5].MoveToPosition(6, motorPosition[5]);
         }
-        private void vScrollBar7_MouseLeave(object sender, EventArgs e)
+        private void vScrollBAccel_MouseLeave(object sender, EventArgs e)
         {
             robotickaPazeRobix.SetAcceleration(acceleration);
         }
-        private void vScrollBar8_MouseLeave(object sender, EventArgs e)
+        private void vScrollBSpeed_MouseLeave(object sender, EventArgs e)
         {
             robotickaPazeRobix.SetMaxSpeed(maxSpeed);
         }
@@ -120,6 +140,19 @@ namespace RoboticArms
         private void btn_Reset_Click(object sender, EventArgs e)
         {
             robotickaPazeRobix.Initioalization();
+            vScrollBJoint1.Value = 0;
+            vScrollBJoint2.Value = 0;
+            vScrollBJoint3.Value = 0;
+            vScrollBJoint4.Value = 0;
+            vScrollBWrist.Value = 0;
+            vScrollBGrip.Value = 0;
+
+            lblJoint1.Text = "0";
+            lblJoint2.Text = "0";
+            lblJoint3.Text = "0";
+            lblJoint4.Text = "0";
+            lblWrist.Text = "0";
+            lblGrip.Text = "0";
         }
 
 
